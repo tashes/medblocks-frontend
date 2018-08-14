@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User List</title>
+		<meta name="viewport" content="width=device-width, user-scalable=no"/>
+		<style type="text/css">
+body
+{
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#viewport
+{
+	width:100%;
+	min-height:100%;
+	padding:0px;
+	margin:0px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:rgb(250,245,240);
+}
+#users
+{
+	box-sizing:border-box;
+}
+#users > div
+{
+	padding:16px;
+	display:flex;
+	cursor:pointer;
+}
+#users > div:hover
+{
+	background:rgba(0,0,0,0.10);
+}
+#users > div > span
+{
+	display:inline-block;
+}
+#users > div > span:nth-child(1)
+{
+	width:80%;
+}
+#users > div > span:nth-child(2)
+{
+	width:20%;
+	text-align:right;
+}
+#adduser
+{
+	text-align:center;
+	padding:32px;
+	box-sizing:border-box;
+	background:rgb(180,220,100);
+	cursor:pointer;
+}
+#adduser:hover
+{
+	background:rgb(160,200,80);
+}
+		</style>
+	</head>
+	<body>
+		<div id="viewport">
+			<div id="users">
+				<div><span>User name</span><span>2 records</span></div>
+			</div>
+			<div id="adduser">Add User</div>
+		</div>
+	</body>
+</html>

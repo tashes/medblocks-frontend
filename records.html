@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Records List</title>
+		<meta name="viewport" content="width=device-width, record-scalable=no"/>
+		<style type="text/css">
+body
+{
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:0px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#viewport
+{
+	width:100%;
+	min-height:100%;
+	padding:0px;
+	margin:0px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:rgb(250,245,240);
+}
+#records
+{
+	box-sizing:border-box;
+}
+#records > div
+{
+	padding:16px;
+	display:flex;
+	cursor:pointer;
+}
+#records > div:hover
+{
+	background:rgba(0,0,0,0.10);
+}
+#records > div > span
+{
+	display:inline-block;
+}
+#records > div > span:nth-child(1)
+{
+	width:80%;
+}
+#records > div > span:nth-child(2)
+{
+	width:20%;
+	text-align:right;
+}
+#addrecord
+{
+	text-align:center;
+	padding:32px;
+	box-sizing:border-box;
+	background:rgb(180,220,100);
+	cursor:pointer;
+}
+#addrecord:hover
+{
+	background:rgb(160,200,80);
+}
+#userdata
+{
+	padding:16px;
+}
+#userdata > h1,
+#userdata > h2,
+#userdata > h3
+{
+	margin:0;
+	margin-bottom:8px;
+	font-family:sans-serif;
+}
+		</style>
+	</head>
+	<body>
+		<div id="viewport">
+			<div id="userdata">
+				<h1>Name</h1>
+				<h2>Phone</h2>
+				<h3>Public Key</h3>
+			</div>
+			<div id="records">
+				<div>Record name</div>
+			</div>
+			<div id="addrecord">Add record</div>
+		</div>
+	</body>
+</html>
